@@ -1,0 +1,20 @@
+header{
+    grid-area: header;
+    padding: 1.875rem;
+    background-color: white;
+}
+
+@media only screen and (min-width: 790px){
+    header{
+        padding: 60px 0;
+        text-align: left;
+        width: 100%;
+        z-index: 10;
+        background-color: transparent;
+
+        svg{
+            height: 48px;
+        }
+    }
+
+}
