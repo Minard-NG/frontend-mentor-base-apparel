@@ -7,7 +7,7 @@ let re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
 
 btn.addEventListener('click', (e)=>{
-    if (email.value === '' || !email.value.match(re)){
+    if (email.value === '' || !re.test(email.value)){
         error.style.opacity = 1;
         email.style.border = "1px solid #f96262";
     }
